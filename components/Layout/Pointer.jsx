@@ -1,7 +1,8 @@
 import { motion, useMotionValue, useSpring, useTransform, useVelocity } from "framer-motion"
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 
 export const Pointer = () => {
+    const [isMobile, setIsMobile] = useState(false)
     const pointerRef = useRef(null)
     const x = useSpring(0, { damping: 50, stiffness: 900 })
     const y = useSpring(0, { damping: 50, stiffness: 900 })
@@ -13,7 +14,14 @@ export const Pointer = () => {
         })
     }, [x, y])
 
-    return (
+    useEffect(() => {
+        window.matchMedia("(max-width: 640px)").matches && setIsMobile(true)
+        window.addEventListener("resize", () => {
+            !window.matchMedia("(max-width: 640px)").matches && setIsMobile(false)
+        })
+    }, [])
+
+    return isMobile ? null : (
         <motion.div
             style={{ x, y, translateX: "-50%", translateY: "-50%" }}
             ref={pointerRef}

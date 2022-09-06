@@ -18,7 +18,6 @@ const Marquee = ({ text, speed = 1, children }) => {
     useEffect(() => {
         if (!textRef.current) return
         const textWidth = textRef.current.getBoundingClientRect().width
-        console.log(textWidth)
         windowClientRect.current = document.documentElement.getBoundingClientRect()
         if (textWidth < windowClientRect.current.width) {
             setContent((prevContent) => prevContent.concat(" ", text))

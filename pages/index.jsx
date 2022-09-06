@@ -6,6 +6,7 @@ import { ModelsFigure } from "../components/pages/index/ModelsFigure"
 import Instagram from "../components/Icon/Instagram"
 import Linkedin from "../components/Icon/Linkedin"
 import Logo from "../components/Icon/Logo"
+import SayHello from "../components/pages/index/SayHello"
 
 export default function Home() {
     return (
@@ -74,7 +75,7 @@ export default function Home() {
                         className="flex flex-col gap-10"
                     >
                         <Marquee text={"Ecomerce Strategy ui/ux desing consumer insights"}></Marquee>
-                        <Marquee speed={0.5} text={"Ecomerce Strategy ui/ux desing consumer insights"}></Marquee>
+                        <Marquee speed={0.7} text={"Ecomerce Strategy ui/ux desing consumer insights"}></Marquee>
                     </motion.div>
                 </section>
 
@@ -147,7 +148,7 @@ export default function Home() {
                             <h4>PARTNERING WITH FORWARD THINKING BRANDS.</h4>
                             <span>GET IN TOUCH.</span>
                         </div>
-                        <div className="w-full flex flex-col sm:flex-row justify-between gap-10">
+                        <div className="relative w-full flex flex-col sm:flex-row justify-between gap-10">
                             <div className="flex flex-col gap-1">
                                 <h5 className="text-xl font-bold">Based in Munich</h5>
                                 <p className="text-sm">Zenettiplatz 1 / 80337 Munich</p>
@@ -163,6 +164,9 @@ export default function Home() {
                                 <div className="w-5">
                                     <Linkedin fill="#FFF" />
                                 </div>
+                            </div>
+                            <div className="absolute right-0 lg:right-20 top-0 ">
+                                <SayHello text={"Github"} />
                             </div>
                         </div>
                     </motion.div>
