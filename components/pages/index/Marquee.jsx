@@ -45,7 +45,7 @@ const Marquee = ({ text, speed = 1, children }) => {
     return (
         <motion.div
             onViewportEnter={addScrollListener}
-            className="w-full overflow-hidden text-white font-extrabold text-5xl sm:text-6xl lg:text-8xl uppercase"
+            className="w-full text-white font-extrabold text-5xl sm:text-6xl lg:text-8xl uppercase"
         >
             <motion.div
                 ref={containerRef}
