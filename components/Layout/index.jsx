@@ -1,6 +1,6 @@
 import { motion, MotionConfig, useAnimation } from "framer-motion"
 import dynamic from "next/dynamic"
-import { useContext, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { Menu } from "./Menu"
 import { Topbar } from "./TopBar"
 import { mainContext } from "../../context/mainContext"

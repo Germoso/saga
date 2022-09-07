@@ -1,6 +1,5 @@
-import { motion, useMotionValue, useSpring, useTransform, useAnimationControls } from "framer-motion"
-import { clamp } from "gsap"
-import dynamic, { noSSR } from "next/dynamic"
+import { motion, useMotionValue, useTransform, useAnimationControls } from "framer-motion"
+import dynamic from "next/dynamic"
 import { useContext, useEffect, useRef, useState } from "react"
 import { mainContext } from "../../../context/mainContext"
 

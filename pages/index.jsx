@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { motion, useAnimationControls } from "framer-motion"
+import { motion } from "framer-motion"
 import Marquee from "../components/pages/index/Marquee"
 import Layout from "../components/Layout"
 import { ModelsFigure } from "../components/pages/index/ModelsFigure"
@@ -63,10 +63,10 @@ export default function Home() {
 
                 <section
                     data-scroll
-                    data-scroll-speed="-3"
+                    data-scroll-speed="-4"
                     // data-scroll-position="bottom"
                     data-scroll-offset="-100%"
-                    className="h-screen flex flex-col gap-3 justify-center "
+                    className="h-[150vh] flex flex-col gap-3 justify-center "
                 >
                     <h4 className="px-5 sm:px-0 text-2xl font-bold">Our Tollbox.</h4>
                     <motion.div
@@ -181,7 +181,7 @@ export default function Home() {
                     <div data-scroll data-scroll-speed="-8" className="w-full">
                         <Logo className={"fill-logoPink w-full"} />
                     </div>
-                    <div className="w-full flex gap-5 lg:justify-between">
+                    <div className="w-full flex gap-5 justify-center lg:justify-between">
                         <div className="flex gap-2">
                             <span>Impressum</span>
                             <span>Datenschutz</span>

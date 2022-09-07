@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useSpring, useTransform, useVelocity } from "framer-motion"
+import { motion, useSpring } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 
 export const Pointer = () => {
